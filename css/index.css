@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+html{
+    --background: #19329e;
+}
+
+body{
+    font: inherit;
+    background: var(--background);   
+}
+
+header{
+    background: yellow;
+    display: flex;
+    width: 100%;
+    max-height: 15vh;
+    padding: 10px;
+}
+.left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.left img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right ul{
+    display: contents;
+    list-style-type: none;
+}
+
+
