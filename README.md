@@ -56,7 +56,7 @@ Thank you for being a valuable part of our community! 🎉
 
 
 
-<a href="https://discord.gg/X69MUr2DKm" title="Discord server invite link"><img src="https://freelogopng.com/images/all_img/1691730767discord-logo-transparent.png" width="300"></a>
+<a href="https://discord.gg/X69MUr2DKm" title="Discord server invite link"><img src="https://freelogopng.com/images/all_img/1691730767discord-logo-transparent.png" width="100"></a>
 
 ![SourcewareLab Logo](https://raw.githubusercontent.com/SourcewareLab/community-website/refs/heads/main/imgs/logo.png)
 
