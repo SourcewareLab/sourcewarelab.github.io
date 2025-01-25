@@ -1,45 +1,53 @@
+# Community Website
+# 🤖 About
 
-# 🚀 Contribution Workflow
+The Community Website is a centralized hub for showcasing open-source projects, connecting contributors, and fostering collaboration.
+
+# 🚀 How to Contribute
+
+We love contributions from everyone! Whether you're fixing a bug, adding a new feature, or improving documentation, your help is always appreciated. Here's how you can contribute:
 
 Follow the steps below to contribute effectively:
 
-1. **Fork the Repository:**
-   - Navigate to the `dev` branch and fork the repository onto your personal GitHub account.
+1. **Fork the Repository:** Start by forking the repository to your own GitHub account.
 
-2. **Clone the Repository:**
-   - Clone the forked repository to your local development environment.
-   ```bash
-   git clone https://github.com/your-username/community-website.git
-   ```
+2. **Clone the Repository:** Clone the forked repository to your local development environment.<br><br>
+`git clone https://github.com/your-username/community-website.git`
 
-3. **Create a New Branch Locally:**
-   - Before making any changes, create a new branch using the required naming convention:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-   **Branch Naming Schema:** `feature/your-feature-name` or `fix/your-bug-description`
+3. **Create a New Branch Locally:** Create a branch for your feature or fix. Name your branch in a way that describes the purpose of your changes. For example:
+- `feature/feature-name`
+- `bugfix/bug-description`
+- `docs/clarify-setup-instructions`
 
 4. **Make Your Changes:**
    - Add your code, features, or bug fixes.
 
-5. **Commit Your Changes:**
-   - Commit your changes locally with meaningful messages:
-   ```bash
-   git add .
-   git commit -m "feat: Added new feature"
-   ```
+5. **Commit Guidelines:** When committing changes to your branch, please follow this naming scheme to keep commit history clean and readable:
 
-6. **Push to Your Repository:**
-   - Push the changes to your forked repository:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
+Commit message format: `<type>:<short-description>`
 
-7. **Create a Pull Request (PR):**
-   - Go to the community repository and create a PR from your local branch to the `dev` branch.
+Types:
 
-8. **Code Review:**
-   - Your PR will be reviewed by maintainers. Make necessary changes if requested.
+    feat: A new feature or functionality added to the project.
+    fix: A bug fix.
+    docs: Documentation changes.
+    style: Code style changes (e.g., formatting, missing semicolons).
+    refactor: Code changes that neither fix a bug nor add a feature, but improve the structure.
+    test: Adding or modifying tests.
+    chore: Changes to the build process or auxiliary tools.
+
+Example Commit Messages:
+
+    feat: add user authentication to the website
+    fix: resolve issue with missing image on homepage
+    docs: update README.md with contribution guidelines
+    style: format code according to ESLint rules
+    test: add unit test for login function
+    chore: update dependencies to latest version
+
+6. **Push and Create a Pull Request:** Once you're ready, push your changes to your forked repository and open a pull request to the `dev` repository.
+
+8. **Follow Up** We will review your changes and may provide feedback. Please address any comments or requested changes, and we’ll merge your contribution!
 
 ---
 
@@ -53,12 +61,5 @@ Follow the steps below to contribute effectively:
 
 Thank you for being a valuable part of our community! 🎉
 
-
-
-
-<a href="https://discord.gg/X69MUr2DKm" title="Discord server invite link"><img src="https://freelogopng.com/images/all_img/1691730767discord-logo-transparent.png" width="100"></a>
-
-![SourcewareLab Logo](https://raw.githubusercontent.com/SourcewareLab/community-website/refs/heads/main/imgs/logo.png)
-
-
-
+Join our Discord community for more discussions and updates!
+<a href="https://discord.gg/X69MUr2DKm" title="Discord server invite link"><img src="https://freelogopng.com/images/all_img/1691730767discord-logo-transparent.png" width="25"></a>
