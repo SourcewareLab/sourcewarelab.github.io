@@ -48,3 +48,15 @@ header{
 }
 
 
+#aboutus{
+    background-color: aqua;
+    height: 90vh;
+}
+
+#aboutus div{
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    align-content: center;
+}
