@@ -47,10 +47,12 @@ header{
     list-style-type: none;
 }
 
-
 #aboutus{
-    background-color: aqua;
     height: 90vh;
+}
+
+#projects {
+    height: 100vh;
 }
 
 #aboutus div{
@@ -59,4 +61,55 @@ header{
     height: 50%;
     margin: auto;
     align-content: center;
+}
+
+#projects{
+    background-color: red;
+}
+
+#projects div{
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    align-content: center;
+    float: left;
+}
+
+#projects .projectsPreview{
+    width: 60%;
+}
+
+#projects .projectsPreview img{
+    width: 50%;
+    border-radius: 10px;
+}
+
+#questionAnswer{
+    background-color: orange;
+    height: 50vh;
+}
+
+.questions{
+    width: 95%;
+    height: 100%;
+    padding: 12px;
+}
+
+.questions details{
+    width: 90%;
+    margin: auto;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.questions summary{
+    text-decoration: underline;
+}
+
+.questions details[open]{
+    background-color: white;
+    color: black;
 }
