@@ -30,6 +30,7 @@ Types:
 
     feat: A new feature or functionality added to the project.
     fix: A bug fix.
+    design: Changes related to the design of the project.
     docs: Documentation changes.
     style: Code style changes (e.g., formatting, missing semicolons).
     refactor: Code changes that neither fix a bug nor add a feature, but improve the structure.
@@ -40,6 +41,7 @@ Example Commit Messages:
 
     feat: add user authentication to the website
     fix: resolve issue with missing image on homepage
+    design: change color scheme of the homepage
     docs: update README.md with contribution guidelines
     style: format code according to ESLint rules
     test: add unit test for login function
