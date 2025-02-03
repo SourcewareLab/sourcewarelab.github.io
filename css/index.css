@@ -1,115 +1,158 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-html{
-    --background: #19329e;
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
 }
 
-body{
-    font: inherit;
-    background: var(--background);   
+a {
+  color: #00FF88;
+  text-decoration: none;
 }
 
-header{
-    background: yellow;
+a:hover {
+  color: #00CC66;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00CC66; 
+    border-radius: 12px;
+
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #0A0A0A;
+  padding: 5px 0;
+  border-bottom: 2px solid #00FF88;
+  position: fixed;
+  width: 100%;
+}
+
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00FF88;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerRight{
     display: flex;
-    width: 100%;
-    max-height: 15vh;
-    padding: 10px;
-}
-.left{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
+    column-gap: 40px;
 }
 
-.left img{
-    width: 70px;
-    border-radius: 50%;
+header nav ul li {
+  display: inline;
+
 }
 
-.right{
-    width: 50%;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: flex-end;
+/* Hero Section */
+.hero {
+  background-color: #1A1A1A;
+  padding: 100px 0;
+  text-align: center;
 }
 
-.right ul{
-    display: contents;
-    list-style-type: none;
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-#aboutus{
-    height: 90vh;
+.hero p {
+  font-size: 18px;
+  color: #A0A0A0;
 }
 
-#projects {
-    height: 100vh;
+/* Sections */
+.section {
+  padding: 60px 0;
 }
 
-#aboutus div{
-    text-align: center;
-    width: 100%;
-    height: 50%;
-    margin: auto;
-    align-content: center;
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #00FF88;
 }
 
-#projects{
-    background-color: red;
+/* Projects Section */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-#projects div{
-    text-align: center;
-    width: 40%;
-    height: 100%;
-    align-content: center;
-    float: left;
+.project-card {
+  background-color: #1A1A1A;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #333333;
 }
 
-#projects .projectsPreview{
-    width: 60%;
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-#projects .projectsPreview img{
-    width: 50%;
-    border-radius: 10px;
+.project-card p {
+  color: #A0A0A0;
 }
 
-#questionAnswer{
-    background-color: orange;
-    height: 50vh;
+/* Q&A Section */
+.qa-list {
+  display: grid;
+  gap: 20px;
 }
 
-.questions{
-    width: 95%;
-    height: 100%;
-    padding: 12px;
+.qa-item {
+  background-color: #1A1A1A;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #333333;
 }
 
-.questions details{
-    width: 90%;
-    margin: auto;
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    margin-bottom: 10px;
+.qa-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.questions summary{
-    text-decoration: underline;
+.qa-item p {
+  color: #A0A0A0;
 }
 
-.questions details[open]{
-    background-color: white;
-    color: black;
+/* Footer */
+footer {
+  background-color: #1A1A1A;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 2px solid #00FF88;
+}
+
+footer p {
+  margin: 0;
+  color: #A0A0A0;
 }
