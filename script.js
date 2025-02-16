@@ -1,0 +1,16 @@
+// toggle hamburger menu (for mobile devices)
+function toggleMenu() {
+    var navLinks = document.querySelector(".nav-links");
+    var hamburgerIcon = document.getElementById("hamburger-icon");
+    var xIcon = document.getElementById("x-icon");
+    // add/remove class from navLinks
+    navLinks.classList.toggle("active");
+    // specify the display of hamburgerIcon and xIcon
+    if(document.querySelector(".nav-links").classList.contains("active")){
+        hamburgerIcon.style.display = "none";
+        xIcon.style.display = "block";
+    }else{
+        hamburgerIcon.style.display = "block";
+        xIcon.style.display = "none";
+    }
+}
