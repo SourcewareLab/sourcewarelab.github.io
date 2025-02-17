@@ -60,6 +60,10 @@ nav {
   color: transparent;
 }
 
+.logo-content{
+  display: inherit;
+}
+
 .nav-links {
   display: flex;
   gap: 2rem;
