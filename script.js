@@ -14,3 +14,12 @@ function toggleMenu() {
         xIcon.style.display = "none";
     }
 }
+
+// scroll to top when clicking the logo
+document.querySelector(".logo").addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+    
+})

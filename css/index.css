@@ -62,6 +62,7 @@ nav {
 
 .logo-content{
   display: inherit;
+  cursor: pointer;
 }
 
 .nav-links {
