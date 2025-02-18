@@ -8,7 +8,9 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -22,12 +24,13 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #00CC66; 
-    border-radius: 12px;
+  background: #00CC66;
+  border-radius: 12px;
 
 }
+
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 .container {
@@ -61,9 +64,9 @@ header nav ul {
   align-items: center;
 }
 
-.headerRight{
-    display: flex;
-    column-gap: 40px;
+.headerRight {
+  display: flex;
+  column-gap: 40px;
 }
 
 header nav ul li {

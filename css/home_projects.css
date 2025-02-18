@@ -1,0 +1,298 @@
+/* contains CSS for the Project Section in the Home Page */
+
+@keyframes wipe-up {
+  0% {
+    height: 100%;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
+#projects {
+  position: relative;
+
+  width: 96vw;
+
+  margin: 2vh 2vw;
+
+  color: whitesmoke;
+
+  margin-bottom: 50vh;
+
+  text-align: center;
+
+  padding: 0 0;
+}
+
+
+#projects>div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects>h1 {
+  font-size: 5vh;
+
+  margin-bottom: 5vh;
+}
+
+.project-arrow {
+  position: absolute;
+
+  top: 9vh;
+
+  width: 3vw;
+  height: 50vh;
+
+  background-color: transparent;
+
+  border: solid 1px whitesmoke;
+  border-radius: 10px;
+
+  color: white;
+
+  transition: all 0.3s ease-in-out;
+
+  z-index: 20;
+}
+
+.project-arrow:hover {
+  background-color: rgb(256, 256, 256, 0.05);
+
+  scale: 1.03;
+  cursor: pointer;
+}
+
+#projects>.right-project-arrow {
+  right: 0;
+
+  border-left: none;
+}
+
+#projects>.left-project-arrow {
+  left: 0;
+  border-right: none;
+}
+
+.project-arrow img {
+  width: 30px;
+  height: 30px;
+}
+
+.left-project-arrow img {
+  transform: rotate(180deg);
+}
+
+#projects>.projects-container>div:not(#project-active) {
+  position: absolute;
+
+  visibility: hidden;
+
+  width: 40vw;
+  height: 50vh;
+}
+
+#project-left {
+  left: -40vw;
+}
+
+#project-right {
+  right: 0vw;
+}
+
+#projects .projects-container {
+  width: 82vw;
+  height: 50vh;
+
+  margin: 0vh 7vw;
+}
+
+.projects-container>div {
+  position: relative;
+
+  width: 86vw;
+  height: 40vh;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  gap: 5vw;
+
+  padding: 2vh 2vw;
+}
+
+#project-left,
+#project-right {
+  margin-top: 10vh;
+}
+
+.project-instance {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  transition: scale 0.3s ease-in-out;
+}
+
+/*
+#projects #project-active>div:nth-child(2) {
+  scale: 1.1;
+
+  width: 37.5vw;
+  height: 44vh;
+
+  position: absolute;
+
+  top: 3vh;
+  left: 24.25vw;
+
+  z-index: 11;
+
+  background-color: gray;
+}
+*/
+
+.project-instance>div.project-details-container {
+  border-radius: 10px;
+
+  position: absolute;
+  top: 0;
+  left: 2.5vw;
+
+  width: 30.5vw;
+  height: 35.5vh;
+
+  border: solid whitesmoke 1px;
+  border-radius: 10px;
+
+  background-color: #1a1a1a;
+}
+
+#project-right {
+  right: -38.5vw;
+}
+
+.title-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+  z-index: 10;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.project-instance:hover {
+  scale: 1.05;
+}
+
+.project-details-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 2vh 2vw;
+}
+
+.project-instance:hover .title-container {
+  visibility: hidden;
+  z-index: -10;
+
+  opacity: 0;
+
+}
+
+.title-container {
+  position: absolute;
+  top: 0;
+  left: 2.5vw;
+
+  width: 34.5vw;
+  height: 40vh;
+
+  z-index: 10;
+
+  border: solid whitesmoke 1px;
+  border-radius: 10px;
+
+  background-color: #1a1a1a;
+}
+
+@media (max-width: 1000px) {
+  .project-arrow {
+    width: 6vw;
+  }
+}
+
+@media (max-width: 700px) {
+  #project-active {
+    grid-template-columns: 1fr;
+
+    width: 70vw;
+    padding-left: 0;
+
+    top: 2vh;
+  }
+
+  .projects-container>div:not(#project-active) {
+    top: 3vh;
+  }
+
+  .project-arrow {
+    width: 10vw;
+  }
+
+  .project-instance>div.project-details-container {
+    width: 60vw;
+  }
+
+  .title-container {
+    width: 64vw;
+    height: 39.5vh;
+  }
+}
+
+@media (max-width: 620px) {
+  #projects>h1 {
+    font-size: 3vh;
+  }
+
+  .project-arrow {
+    top: 9vh;
+  }
+}
+
+@media (max-width: 400px) {
+  #projects>h1 {
+    font-size: 2.5vh;
+  }
+
+  .project-arrow {
+    top: 8.5vh;
+  }
+}
+
+@media (max-width: 400px) {
+  #projects>h1 {
+    font-size: 2.5vh;
+  }
+
+  .project-arrow {
+    top: 8.5vh;
+  }
+}

@@ -2,99 +2,151 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sourceware Lab</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sourceware Lab</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Projects Section -->
+  <link rel="stylesheet" href="css/home_projects.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <div class="headerLeft">
-                        <h1 class="logo">Sourceware Lab</h1>
-                    </div>
-                    <div class="headerRight">
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#qa">Question & Answer</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <div class="headerLeft">
+            <h1 class="logo">Sourceware Lab</h1>
+          </div>
+          <div class="headerRight">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#qa">Question & Answer</a></li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h2>Code, Collaborate, Create.</h2>
-            <p>Contribute your skills, learn from others, and leave your mark on open source</p>
-        </div>
-        <div class="buttons flex-end">
-            <a style="border: 1px solid green;border-radius: 12px; padding: 12px;" href="https://discord.gg/X69MUr2DKm" target="_blank">Join the community</a>
-            
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Code, Collaborate, Create.</h2>
+      <p>Contribute your skills, learn from others, and leave your mark on open source</p>
+    </div>
+    <div class="buttons flex-end">
+      <a style="border: 1px solid green;border-radius: 12px; padding: 12px;" href="https://discord.gg/X69MUr2DKm"
+        target="_blank">Join the community</a>
 
-    <!-- About Us Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Sourceware Lab is a community-driven platform dedicated to fostering innovation in open-source software.
-                Our mission is to provide a space for developers, designers, and enthusiasts to collaborate and create
-                impactful projects.</p>
-        </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Community Website</h3>
-                    <p>A centralized hub for showcasing open-source projects made by the community.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Glados Discord BOT</h3>
-                    <p>A Discord bot for managing server and community.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- About Us Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Sourceware Lab is a community-driven platform dedicated to fostering innovation in open-source software.
+        Our mission is to provide a space for developers, designers, and enthusiasts to collaborate and create
+        impactful projects.</p>
+    </div>
+  </section>
 
-    <!-- Question & Answer Section -->
-    <section id="qa" class="section">
-        <div class="container">
-            <h2>Question & Answer</h2>
-            <div class="qa-list">
-                <div class="qa-item">
-                    <h3>What is this community for?</h3>
-                    <p>Sourceware Lab from it's inception was designed with one goal in mind - to be a place for people to come together and learn to build with each other.-.</p>
-                </div>
-                <div class="qa-item">
-                    <h3>Can I contribute to projects?</h3>
-                    <p>Yes! All our projects are open-source, and we welcome contributions from everyone.</p>
-                </div>
-                <div class="qa-item">
-                    <h3>Where can I ask questions?</h3>
-                    <p>Join the <a href="https://discord.gg/X69MUr2DKm" target="_blank">Sourceware Lab </a>Discord Server to ask questions and get help, you are welcome!</p>
-                </div>
-            </div>
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>COMMUNITY PROJECTS</h2>
+    <button onclick="leftButton()" class="left-project-arrow project-arrow">
+      <img alt="left arrow" src="imgs/arrow.png" />
+    </button>
+    <div class="projects-container">
+      <div id="project-left">
+        <div class="project-instance" id="project-1">
+          <div class="title-container">
+            <h2>Community Website</h2>
+          </div>
+          <div class="project-details-container">
+            lorem ipsums dolor sit amet
+          </div>
         </div>
-    </section>
+      </div>
+      <div id="project-active">
+        <div class="project-instance" id="project-2">
+          <div class="title-container">
+            <h2>Open Source Arena - OSA</h2>
+          </div>
+          <div class="project-details-container">
+            Open Source Arena is an extremely ambitions project to build multi-tiered arena experience for developers
+            of all skills to learn, practice, grow, and compete in events to hone their skills.
+            <br />
+            Events and Gladiators are created in individual files and designed to pass libraries or methods from one
+            piece to another to gamify not only foundational coding skills, but compatibility and interactivity as
+            well!
+          </div>
+        </div>
+        <div class="project-instance" id="project-3 ">
+          <div class="title-container">
+            <h2>GladOS Bot</h2>
+          </div>
+          <div class="project-details-container">
+            lorem ipsums dolor sit amet
+          </div>
+        </div>
+      </div>
+      <div id="project-right">
+        <div class="project-instance" id="project-4">
+          <div class="title-container">
+            <h2>Community Website</h2>
+          </div>
+          <div class="project-details-container">
+            lorem ipsums dolor sit amet
+          </div>
+        </div>
+      </div>
+    </div>
+    <button onclick="rightButton()" class="right-project-arrow project-arrow">
+      <img alt="right arrow" src="imgs/arrow.png" />
+    </button>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>Made with love by <b>Sourceware Lab</b>.</p>
+  <!-- Question & Answer Section -->
+  <section id="qa" class="section">
+    <div class="container">
+      <h2>Question & Answer</h2>
+      <div class="qa-list">
+        <div class="qa-item">
+          <h3>What is this community for?</h3>
+          <p>Sourceware Lab from it's inception was designed with one goal in mind - to be a place for people to come
+            together and learn to build with each other.-.</p>
         </div>
-    </footer>
+        <div class="qa-item">
+          <h3>Can I contribute to projects?</h3>
+          <p>Yes! All our projects are open-source, and we welcome contributions from everyone.</p>
+        </div>
+        <div class="qa-item">
+          <h3>Where can I ask questions?</h3>
+          <p>Join the <a href="https://discord.gg/X69MUr2DKm" target="_blank">Sourceware Lab </a>Discord Server to ask
+            questions and get help, you are welcome!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Made with love by <b>Sourceware Lab</b>.</p>
+    </div>
+  </footer>
+
+  <!-- Project Section -->
+  <script src="js/projectSection/shiftLeft.js"></script>
+  <script src="js/projectSection/shiftLeftMobile.js"></script>
+  <script src="js/projectSection/shiftRight.js"></script>
+  <script src="js/projectSection/shiftRightMobile.js"></script>
+  <script src="js/projectSection/home_projects.js"></script>
 </body>
 
 </html>
