@@ -16,9 +16,16 @@ function toggleMenu() {
 }
 
 // scroll to top when clicking the logo
-document.querySelector(".logo").addEventListener("click", () => {
+document.querySelector(".logo-content").addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth"
   })
+})
+
+// Check for element click to close the navigation bar
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        toggleMenu()
+    })
 })
