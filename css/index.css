@@ -26,6 +26,12 @@ body {
   line-height: 1.5;
 }
 
+.jetbrains-mono {
+  font-family: "JetBrains Mono", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -60,7 +66,7 @@ nav {
   color: transparent;
 }
 
-.logo-content{
+.logo-content {
   display: inherit;
   cursor: pointer;
 }
@@ -105,6 +111,7 @@ nav .icon-sm:hover {
 }
 
 .hero h1 {
+  font-family: 'Orbitron', sans-serif;
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
@@ -168,6 +175,10 @@ section {
 .section-header h2 {
   font-size: 1.875rem;
   font-weight: bold;
+
+  background: linear-gradient(to right, var(--color-accent), #3b82f6);
+  color: transparent;
+  background-clip: text;
 }
 
 /* About Section */
@@ -179,14 +190,20 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+
+  min-height: 33vh;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  color: var(--color-text-secondary);
   text-wrap: wrap;
+
+  font-size: 1.1em;
 }
 
 .stats-card {
@@ -194,9 +211,16 @@ section {
   padding: 1.5rem;
   border-radius: 0.5rem;
   border: 1px solid var(--color-border);
+
+  height: 60%;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  text-align: center;
 }
 
 .stats-card h3 {
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
@@ -205,12 +229,27 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+
+  height: 100%;
 }
 
 .stat {
   background-color: rgba(17, 24, 39, 0.5);
   padding: 1rem;
   border-radius: 0.5rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.stat div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .stat-number {
@@ -221,6 +260,9 @@ section {
 
 .stat-label {
   color: var(--color-text-secondary);
+
+  font-size: 1.1em;
+  text-align: center;
 }
 
 /* Projects Section */
@@ -245,6 +287,7 @@ section {
 .project-card h3 {
   font-size: 1.25rem;
   margin: 1rem 0 0.5rem;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .project-card p {
@@ -271,6 +314,7 @@ section {
 }
 
 .qa-card h3 {
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
 }
@@ -317,6 +361,18 @@ section {
   height: 1rem;
 }
 
+.github-button {
+  margin-left: 1vw;
+
+  background-color: var(--color-bg);
+  border: solid 1px var(--color-accent);
+  color: var(--color-accent);
+}
+
+.github-button:hover {
+  background-color: var(--color-bg-secondary);
+}
+
 /* Responsive Design */
 @media (min-width: 768px) {
   .footer-content {
@@ -331,6 +387,14 @@ section {
   .projects-grid,
   .qa-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .stats-card {
+    height: 80%;
   }
 
   .hero h1 {
@@ -371,5 +435,15 @@ section {
 
   #x-icon {
     display: none;
+  }
+
+  .stats-card {
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .github-button {
+    margin-top: 2vh;
   }
 }
