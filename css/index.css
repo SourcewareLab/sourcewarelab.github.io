@@ -302,7 +302,7 @@ section {
 
 .qa-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
 }
 
@@ -447,3 +447,56 @@ section {
     margin-top: 2vh;
   }
 }
+
+.qa-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two questions per row */
+  gap: 20px; /* Adjust spacing between cards */
+  justify-content: center;
+  align-items: start;
+}
+
+.qa-card {
+  background-color: var(--color-bg);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width:30vw;
+  justify-self: center;
+}
+
+.question {
+  background-color: var(--color-bg);
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Layout for text and arrow */
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.question h3 {
+  margin-left: 10px;
+}
+
+.question span {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.hidden {
+  display: none;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+/* Responsive: Single column layout for smaller screens */
+@media (max-width: 768px) {
+  .qa-grid {
+    grid-template-columns: 1fr; /* 1 question per row on smaller screens */
+  }
+}
+
+
