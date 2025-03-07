@@ -32,9 +32,6 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 
 
 // Select all paragraphs inside .qa-card and initially hide them
-document.querySelectorAll('.qa-card p').forEach(para => {
-  para.style.display = "none";
-});
 
 // Select all question headers
 const questions = document.querySelectorAll(".question");
