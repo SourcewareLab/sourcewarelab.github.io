@@ -38,24 +38,28 @@ paragraphs.forEach(paragraph => {
     
 });
 
-// Select all the paragraph elements within sections and hide them
-const sectionParagraphs = document.querySelectorAll('.qa-card p');
-sectionParagraphs.forEach(para => {
-    para.style.display = "none";
+// Select all paragraphs inside .qa-card and initially hide them
+document.querySelectorAll('.qa-card p').forEach(para => {
+  para.style.display = "none";
 });
 
-const head = document.querySelectorAll(".question")
-head.forEach(header =>{
-    header.addEventListener("click",()=>{
-                
-        sectionParagraphs.forEach(para =>{
-            if (para.style.display ==="none") {
-                
-                para.style.display = "block";
-            }else{
-                
-                para.style.display = "none";
-            }
-        })
-    })
-})
+// Select all question headers
+const questions = document.querySelectorAll(".question");
+
+questions.forEach(question => {
+  question.addEventListener("click", () => {
+      // Get the parent .qa-card of the clicked question
+      const parentCard = question.closest(".qa-card");
+      
+      // Find the <p> inside the same .qa-card
+      const paragraph = parentCard.querySelector("p");
+
+      // Toggle paragraph visibility
+      if (paragraph.style.display === "none") {
+          paragraph.style.display = "block";
+
+      } else {
+          paragraph.style.display = "none";
+      }
+  });
+});
