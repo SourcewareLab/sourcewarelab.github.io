@@ -25,18 +25,11 @@ document.querySelector(".logo-content").addEventListener("click", () => {
 
 // Check for element click to close the navigation bar
 document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-        toggleMenu()
-    })
+  link.addEventListener("click", () => {
+    toggleMenu()
+  })
 })
 
-const paragraphs = document.querySelectorAll('.qa-card > p');
-paragraphs.forEach(paragraph => {
-    paragraph.style.display = 'flex';
-    paragraph.style.justifySelf = 'center';
-    paragraph.style.maxWidth = '70%';
-    
-});
 
 // Select all paragraphs inside .qa-card and initially hide them
 document.querySelectorAll('.qa-card p').forEach(para => {
@@ -48,18 +41,20 @@ const questions = document.querySelectorAll(".question");
 
 questions.forEach(question => {
   question.addEventListener("click", () => {
-      // Get the parent .qa-card of the clicked question
-      const parentCard = question.closest(".qa-card");
-      
-      // Find the <p> inside the same .qa-card
-      const paragraph = parentCard.querySelector("p");
+    // Get the parent .qa-card of the clicked question
+    const parentCard = question.closest(".qa-card");
 
-      // Toggle paragraph visibility
-      if (paragraph.style.display === "none") {
-          paragraph.style.display = "block";
+    // Find the <p> inside the same .qa-card
+    const paragraph = parentCard.querySelector("p");
 
-      } else {
-          paragraph.style.display = "none";
-      }
+    // Toggle paragraph visibility
+    if (paragraph.style.display === "none") {
+      paragraph.style.display = "block";
+
+    } else {
+      paragraph.style.display = "none";
+
+    }
   });
 });
+
