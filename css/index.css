@@ -303,24 +303,36 @@ section {
 .qa-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  /* Two questions per row */
+  gap: 20px;
+  /* Adjust spacing between cards */
+  justify-content: center;
+  align-items: stretch;
 }
 
 .qa-card {
-  background-color: rgba(17, 24, 39, 0.5);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 75vw;
+  justify-self: center;
+
+
 }
 
 .qa-card h3 {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
+  width: 37vw;
 }
 
 .qa-card p {
   color: var(--color-text-secondary);
+  display: flex;
+  justify-self: center;
+  display: none;
 }
 
 /* Footer */
@@ -363,7 +375,6 @@ section {
 
 .github-button {
   margin-left: 1vw;
-
   background-color: var(--color-bg);
   border: solid 1px var(--color-accent);
   color: var(--color-accent);
@@ -445,5 +456,44 @@ section {
 @media screen and (max-width: 383px) {
   .github-button {
     margin-top: 2vh;
+  }
+}
+
+
+
+
+
+
+.question {
+  background-color: var(--color-bg);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.question h3 {
+  margin-left: 10px;
+}
+
+.question i {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+
+hr {
+  margin: 10px 0;
+  opacity: 0.1;
+}
+
+/* Responsive: Single column layout for smaller screens */
+@media (max-width: 768px) {
+  .qa-grid {
+    grid-template-columns: 1fr;
+    /* 1 question per row on smaller screens */
   }
 }
