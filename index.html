@@ -4,38 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sourceware Lab</title>
+    <meta name="description" content="Sourceware Lab is a community of developers who are passionate about open source and technology, and want to collaborate on projects to gain real life experiences.">
+    <meta name="keywords" content="Programming, community, developers, coding, projects, learning, networking, open source">
+    <meta name="author" content="Sourceware Lab">
+    <link rel="icon" href="imgs/logo.png" type="image/x-icon">
+    <!-- TODO: fill out meta tags when hosting the website online -->
+    <!-- Facebook meta tags -->
+    <!-- <meta property="og:url" content="summary">
+    <meta property="og:image" content="{{imageUrl}}">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:title" content="{{pageTitle}}">
+    <meta property="og:site_name" content="{{siteTitle}}">
+    <meta property="og:see_also" content="{{homepageUrl}}"> -->
+
+    <!-- Twitter Meta Info  -->
+    <!-- <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="{{pageUrl}}">
+    <meta name="twitter:title" content="{{pageTitle}}">
+    <meta name="twitter:description" content="{{description}}">
+    <meta name="twitter:image" content="{{imageUrl}}"> -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
-    <style>
-    </style>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <header>
-        <div class="left">
-            <img src="imgs/logo.png" max-width="100px" alt="">
-            <p>Sourceware Lab</p>
-        </div>
-        <div class="right">
-            <ul>
-                <li>About us</li>
-                <li>Projects</li>
-                <li>Socials</li>
-            </ul>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <div class="logo-content">
+                        <i data-lucide="terminal" class="icon"></i>
+                        <span>Sourceware Lab</span>
+                    </div>
+                    <div class="nav-btns">
+                        <i data-lucide="menu" onclick="toggleMenu()" id="hamburger-icon" class="icon-sm"></i>
+                        <i data-lucide="x" onclick="toggleMenu()" id="x-icon" class="icon-sm"></i>
+                    </div>
+                </div>
+
+                <div class="nav-links">
+                    <a href="#about">About Us</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#qa">Q&A</a>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <main>
-        <div id="aboutus">
-            <h3>Sourceware Lab</h3>
-            <p>Learn by doing</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Where Code Meets Community</h1>
+                <p>Join our thriving ecosystem of developers, innovators, and problem solvers.</p>
+                <a href="https://discord.gg/X69MUr2DKm" target="_blank" class="btn">
+                    <span>Get Started</span>
+                    <i data-lucide="chevron-right" class="icon-sm"></i>
+                </a>
+            </div>
         </div>
-        <div id="projects">
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <i data-lucide="users" class="icon"></i>
+                <h2>About Us</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>SourcewareLab is a community-driven Discord server where developers of all skill levels come
+                        together to
+                        learn, share, and collaborate on open-source projects together.</p>
+                    <p>Whether you're just starting out or you're a seasoned coder, our goal is to create a welcoming
+                        space where
+                        everyone can grow, connect, and build cool stuff together.</p>
+                    <p>Join us to be part of a global community that's passionate about developing and helping each
+                        other succeed.
+                    </p>
+                </div>
+                <div class="stats-card">
+                    <h3>Community Stats</h3>
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <div class="stat-number">290+</div>
+                            <div class="stat-label">Members</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="socials">
-            
-        </div>
-    </main>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <i data-lucide="code-2" class="icon"></i>
+                <h2>Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <i data-lucide="globe" class="icon"></i>
+                    <h3>Community Website</h3>
+                    <p>The Community Website is a centralized hub for showcasing open-source projects, connecting
+                        contributors,
+                        and fostering collaboration.</p>
+                    <!-- <button class="link-btn">Learn More →</button> -->
+                </div>
+                <div class="project-card">
+                    <i data-lucide="bot" class="icon"></i>
+                    <h3>GladOS Discord Bot</h3>
+                    <p>GladOS is an administration bot initially focused on core admin tasks such as moderation, role
+                        management,
+                        and activity logging, the bot is built to expand over time with additional features like event
+                        scheduling,
+                        project tracking, and automated server tasks.</p>
+                    <!-- <button class="link-btn">Learn More →</button> -->
+                </div>
+                <div class="project-card">
+                    <i data-lucide="land-plot" class="icon"></i>
+                    <h3>Open Source Arena</h3>
+                    <p>Open Source Arena is an extremely ambitions project to build multi-tiered arena experience for
+                        developers
+                        of all skills to learn, practice, grow, and compete in events to hone their skills.</p>
+                    <!-- <button class="link-btn">Learn More →</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Q&A Section -->
+    <section id="qa" class="qa">
+        <div class="container">
+            <div class="section-header">
+                <i data-lucide="help-circle" class="icon"></i>
+                <h2>Questions & Answers</h2>
+            </div>
+            <div class="qa-grid">
+                <div class="qa-card">
+                    <h3>Why should I join?</h3>
+                    <p>We learn together and grow by doing. You'll gain experience, knowledge and new friendships.
+                        Everyone is welcome, regardless of skill level. We're all here to learn and grow together.</p>
+                </div>
+                <div class="qa-card">
+                    <h3>Can I share my own project and ask others to contribute on the server?</h3>
+                    <p>You're welcome to share your project idea in the Project Hub on our Discord server! 
+                        If the community shows interest and support, we can help you bring it to life by providing guidance, resources, and a space for collaboration</p>
+                </div>
+                <div class="qa-card">
+                    <h3>Do I need to register somewhere to join and work on projects by others?</h3>
+                    <p>All you need is a discord and a github account to join.</p>
+                </div>
+                <div class="qa-card">
+                    <h3>Will you promote my project? When will it appear on the website?</h3>
+                    <p>If your project is shared in the Project Hub, gains community support, and reaches MVP status, it will be featured on the website.</p>
+                </div>
+                <div class="qa-card">
+                    <h3>What are community projects on Sourceware Lab?</h3>
+                    <p>Community projects on Sourceware Lab are our most actively developed initiatives. We provide them with the highest level of support and ensure a smooth, 
+                        streamlined onboarding process so any member can easily join. These projects are also showcased on our website</p>
+                </div>
+                <div class="qa-card">
+                    <h3>Do I need some kind of prior experience in programming to be able to join?</h3>
+                    <p>We recommend that you already know the basics of at least one programming language,
+                        other than that no prior experience is needed, anyone can join, doesn't matter the experience,
+                        we're all here to learn and grow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i data-lucide="terminal" class="icon-sm"></i>
+                    <span>Sourceware Lab</span>
+                </div>
+                <div class="footer-copyright">
+                    <a href="https://github.com/SourcewareLab" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
