@@ -315,7 +315,7 @@ section {
   border-radius: 8px;
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  max-width: 75vw;
+  max-width: 52vw;
   justify-self: center;
 
 
@@ -325,13 +325,14 @@ section {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
-  width: 37vw;
+  width: 36vw;
 }
 
 .qa-card p {
   color: var(--color-text-secondary);
   display: flex;
   justify-self: center;
+
   display: none;
 }
 
@@ -472,6 +473,8 @@ section {
   cursor: pointer;
   padding: 10px;
   border-radius: 5px;
+  max-width: 90%;
+
 }
 
 .question h3 {
