@@ -25,7 +25,33 @@ document.querySelector(".logo-content").addEventListener("click", () => {
 
 // Check for element click to close the navigation bar
 document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-        toggleMenu()
-    })
+  link.addEventListener("click", () => {
+    toggleMenu()
+  })
 })
+
+
+// Select all paragraphs inside .qa-card and initially hide them
+
+// Select all question headers
+const questions = document.querySelectorAll(".question");
+
+questions.forEach(question => {
+  question.addEventListener("click", () => {
+    // Get the parent .qa-card of the clicked question
+    const parentCard = question.closest(".qa-card");
+
+    // Find the <p> inside the same .qa-card
+    const paragraph = parentCard.querySelector("p");
+
+    // Toggle paragraph visibility
+    if (paragraph.style.display === "none") {
+      paragraph.style.display = "block";
+
+    } else {
+      paragraph.style.display = "none";
+
+    }
+  });
+});
+
