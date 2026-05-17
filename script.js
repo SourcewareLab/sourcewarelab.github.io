@@ -45,7 +45,7 @@ questions.forEach(question => {
     const paragraph = parentCard.querySelector("p");
 
     // Toggle paragraph visibility
-    if (paragraph.style.display === "none") {
+    if (paragraph.style.display === "none" || paragraph.style.display == '') {
       paragraph.style.display = "block";
 
     } else {
